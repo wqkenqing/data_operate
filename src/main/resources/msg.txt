@@ -1,0 +1,1 @@
+2019-10-22 15:59:03 INFO  yidong-tourist_minute_local - [{"name":"7RyyF1OlcoPMRtMFk","age":60,"birthday":"1986-11-09 05:13:52"}]
