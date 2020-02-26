@@ -36,7 +36,7 @@
         <mockito_version>1.9.5</mockito_version>
         <jetty_version>6.1.26</jetty_version>
         <zookeeper_version>3.3.3</zookeeper_version>
-        <jackson_version>2.6.3</jackson_version>
+        <jackson_version>2.10.2</jackson_version>
 
         <!--spark-->
         <spark.version>2.11</spark.version>
