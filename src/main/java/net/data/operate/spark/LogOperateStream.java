@@ -84,10 +84,7 @@ public class LogOperateStream implements Serializable {
 
         JavaInputDStream<ConsumerRecord<String, String>> logDStream = KafkaUtils.createDirectStream(jssc, LocationStrategies.PreferConsistent(), ConsumerStrategies.<String, String>Subscribe(topicsSet, kafkaParams));
 
-
         logDStream.mapPartitions(message -> {
-//                    String stateKey = "gather_logerror_count";
-//                    String countKey = "gather_log_count";
                     String errorKey = GatherLogEnum.createDay(GatherLogEnum.LYDSJ_GATHER_LOG_ERROR.getName());
                     String cerrorKey = GatherLogEnum.createDay(GatherLogEnum.LYDSJ_GATHER_CALL_ERROR.getName());
                     String countKey = GatherLogEnum.createDay(GatherLogEnum.LYDSJ_GATHER_LOG_COUNT.getName());
@@ -134,9 +131,7 @@ public class LogOperateStream implements Serializable {
                         if (jedis != null) {
                             jedis.close();
                         }
-
                     }
-
                     return message;
                 }
         ).

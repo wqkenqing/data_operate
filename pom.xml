@@ -354,18 +354,18 @@
         <dependency>
             <groupId>org.apache.flume</groupId>
             <artifactId>flume-ng-core</artifactId>
-            <version>1.7.0</version>
+            <version>1.9.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flume</groupId>
             <artifactId>flume-ng-configuration</artifactId>
-            <version>1.7.0</version>
+            <version>1.9.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.flume.flume-ng-sinks/flume-ng-kafka-sink -->
         <dependency>
             <groupId>org.apache.flume.flume-ng-sinks</groupId>
             <artifactId>flume-ng-kafka-sink</artifactId>
-            <version>1.6.0</version>
+            <version>1.9.0</version>
         </dependency>
 
         <!--jsoup-->
@@ -433,7 +433,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass></mainClass>
+                            <mainClass>net.data.operate.kafka.producer.TempProducer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -459,7 +459,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>data_operate</finalName>
+        <finalName>load-info-kafka</finalName>
     </build>
 
 </project>
